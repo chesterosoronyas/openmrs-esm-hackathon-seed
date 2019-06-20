@@ -74,19 +74,31 @@ export default function DiagnosisInfoParcel(props: DiagnosisInfoParcelProps) {
       if (arrayreturned.length > 0) {
         return (
           <div>
-            <h3>Diagnosis</h3>
-            <div className="info-body">
-              {arrayreturned.map(x => {
-                return <p>{x.value}</p>;
-              })}
+            <div className="card">
+              <div className="card-header">
+                <h5 className="card-title">Diagnosis</h5>
+                <div className="card-body">
+                  <ul className="list-group">
+                    {arrayreturned.map(x => {
+                      return <li className="list-group-item">{x.value}</li>;
+                    })}
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         );
       } else {
         return (
           <div>
-            <h3>Diagnosis</h3>
-            <div className="info-body">No Diagnosis</div>
+            <div className="card">
+              <div className="card-header">
+                <h5 className="card-title">Diagnosis</h5>
+                <div className="card-body">
+                  <p>No Diagnosis</p>
+                </div>
+              </div>
+            </div>
           </div>
         );
       }
@@ -101,8 +113,14 @@ export default function DiagnosisInfoParcel(props: DiagnosisInfoParcelProps) {
   function renderNoDiagnosis() {
     return (
       <div>
-        <h3>Diagnosis</h3>
-        <div>No Diagnosis</div>
+        <div className="card">
+          <div className="card-header">
+            <h5 className="card-title">Diagnosis</h5>
+            <div className="card-body">
+              <p>No Diagnosis</p>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
