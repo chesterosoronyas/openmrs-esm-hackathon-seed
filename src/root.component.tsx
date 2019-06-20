@@ -1,5 +1,5 @@
 import { setPriority } from "os";
-import React, { useEffect } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import singleSpaReact from "single-spa-react";
 import dayjs from "dayjs";
@@ -7,7 +7,7 @@ import { objectTypeSpreadProperty } from "@babel/types";
 import { render } from "@testing-library/react";
 import { format } from "util";
 
-export default function diagnosisInfoParcel(props: DiagnosisInfoParcelProps) {
+export default function DiagnosisInfoParcel(props: DiagnosisInfoParcelProps) {
   const [Diagnosislist, setDiagnosislist] = React.useState(null);
   React.useEffect(() => {
     const queryParams = `custom:(uuid,display,value:(uuid,display,conceptClass:(uuid,display,name)),obsDatetime)`.replace(
