@@ -77,13 +77,13 @@ export default function DiagnosisInfoParcel(props: DiagnosisInfoParcelProps) {
             <div className="card">
               <div className="card-header">
                 <h5 className="card-title">Diagnosis</h5>
-                <div className="card-body">
-                  <ul className="list-group">
-                    {arrayreturned.map(x => {
-                      return <li className="list-group-item">{x.value}</li>;
-                    })}
-                  </ul>
-                </div>
+              </div>
+              <div className="card-body">
+                <ul className="list-group">
+                  {arrayreturned.map(x => {
+                    return <li className="list-group-item">{x.value}</li>;
+                  })}
+                </ul>
               </div>
             </div>
           </div>
@@ -94,9 +94,9 @@ export default function DiagnosisInfoParcel(props: DiagnosisInfoParcelProps) {
             <div className="card">
               <div className="card-header">
                 <h5 className="card-title">Diagnosis</h5>
-                <div className="card-body">
-                  <p>No Diagnosis</p>
-                </div>
+              </div>
+              <div className="card-body">
+                <p>No Diagnosis</p>
               </div>
             </div>
           </div>
