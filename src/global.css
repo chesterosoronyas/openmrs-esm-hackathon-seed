@@ -1,3 +1,26 @@
 .sample-class {
   background-color: orange;
 }
+
+.info-body {
+  line-height: 1.1em;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 5px;
+  background: #f9f9f9;
+  border: 1px solid #eeeeee;
+  padding: 5px;
+  color: #363463;
+}
+h3 {
+  display: inline-block;
+  font-family: "OpenSansBold";
+  font-display: bold;
+  font-size: 1.8em;
+  margin: 0;
+
+  border-bottom: 1px solid black;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
